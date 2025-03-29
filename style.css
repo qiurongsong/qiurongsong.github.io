@@ -1,6 +1,6 @@
 body {
-  font-size: 18px;       /* 原本大多数网站是14~16px，这里调大一点 */
-  line-height: 1.6;      /* 增加行间距让内容更舒服 */
+  font-size: 16px;       /* 原本大多数网站是14~16px，这里调大一点 */
+  line-height: 1.2;      /* 增加行间距让内容更舒服 */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #222;
 }
