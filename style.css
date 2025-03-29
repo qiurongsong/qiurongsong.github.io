@@ -43,7 +43,7 @@ section{border:1px solid #e5e5e5;border-width:1px 0;padding:20px 0;margin:0 0 20
 }
 
 .social-links a {
-  font-size: 32px; /* 更大图标 */
+  font-size: 44px; /* 更大图标 */
   color: #444;
   text-decoration: none;
   transition: color 0.3s ease;
