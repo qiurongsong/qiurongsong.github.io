@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Qiurong Song | Personal</title>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5TRQN7EX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E5TRQN7EX7');
+  </script>
+
+
+</head>
+<body>
+  <div class="wrapper">
+    
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="brand-link">Qiurong Song</a>
+      <span class="tagline">HCI · Privacy · Healthcare</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="personal.html">Personal</a>
+    </nav>
+  </header>
+
+    <main class="content">
+      <h1>Personal</h1>
+      <p class="lead">Outside of research, I enjoy hiking, indie cafes, and cozy Nintendo games. Here's a lighter side.</p>
+
+      <section class="grid-2">
+        <div>
+          <h3>Currently playing</h3>
+          <ul>
+            <li><em>Animal Crossing</em> — decorating &amp; designing islands</li>
+            <li><em>Stardew Valley</em> — farming &amp; fishing for chill vibes</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Weekend favorites</h3>
+          <ul>
+            <li>New trail each month around PA</li>
+            <li>Trying a new third‑wave coffee spot</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h3>Photos</h3>
+        <p>Add a few snapshots named <code>personal-1.jpg</code>, <code>personal-2.jpg</code>, etc. into this folder and they’ll display automatically.</p>
+        <div class="photo-grid" id="photoGrid"></div>
+      </section>
+    </main>
+    
+  <footer class="site-footer">
+    <div class="social-links">
+      <a href="https://scholar.google.com/citations?user=hg3heAoAAAAJ" target="_blank" title="Google Scholar">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+      <a href="https://www.researchgate.net/profile/Qiurong-Song" target="_blank" title="ResearchGate">
+        <i class="fab fa-researchgate"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/qiurong-song-89a4b626a/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/QiurongSong" target="_blank" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <p>© <span id="year"></span> Qiurong Song · Hosted on GitHub Pages — Theme adapted</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  </div>
+
+  <script>
+    // Auto-load photos if they exist in the root
+    const grid = document.getElementById('photoGrid');
+    const candidates = Array.from({length: 6}, (_, i) => `personal-${i+1}.jpg`);
+    candidates.forEach(name => {
+      const img = new Image();
+      img.src = name;
+      img.onload = () => {
+        const el = document.createElement('img');
+        el.src = name;
+        el.alt = name;
+        grid.appendChild(el);
+      };
+    });
+  </script>
+</body>
+</html>
