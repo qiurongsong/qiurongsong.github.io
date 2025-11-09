@@ -334,7 +334,7 @@ p {
   border-bottom: none;
 }
 
-/* Project images */
+/* /* Project images */
 .project-image {
   width: 100%;
   border-radius: 10px;
@@ -342,7 +342,18 @@ p {
   height: 240px;
   border: 1px solid var(--border);
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+} */
+
+.project-image {
+  width: 100%;
+  max-height: 320px;     /* allow more height for visibility */
+  object-fit: contain;   /* show full image without cropping */
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  background-color: #fff; /* prevent gray bars for transparent images */
 }
+
 
 /* Project text */
 .project-text h2 {
