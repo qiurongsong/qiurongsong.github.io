@@ -272,3 +272,25 @@ section{margin:0 0 2rem 0}
   line-height: 1.7;
   max-width: 800px;
 }
+
+
+.contact-info {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+}
+
+.contact-info i {
+  color: var(--accent);
+  margin-right: 0.6rem;
+}
+
+.contact-info a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
