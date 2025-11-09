@@ -197,3 +197,9 @@ body.index-page .hero-socials a {
   font-size: 2rem;  /* ⬆ even larger icons */
   margin-right: 1.2rem;
 }
+/* Better readability: paragraph spacing */
+.intro p {
+  margin-bottom: 1rem;     /* space between paragraphs */
+  line-height: 1.75;       /* improves readability */
+  font-size: 1.05rem;      /* optional: slightly larger text */
+}
