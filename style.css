@@ -124,6 +124,12 @@ section{margin:0 0 2rem 0}
 .news-list li{padding:.6rem .25rem;border-bottom:1px dashed var(--border)}
 .news-list li:last-child{border-bottom:0}
 .news-actions{margin-top:.75rem}
+/* If the first section under the header is .news, remove its top border */
+.content > .news:first-child {
+  border-top: 0;
+  padding-top: 0; /* optional: keeps spacing tight to the header */
+}
+
 
 /* Cards (projects) */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
