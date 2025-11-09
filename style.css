@@ -38,25 +38,52 @@ a:hover{text-decoration:underline}
 .tagline{color:var(--muted);font-size:.95rem}
 
 /* Nav */
-.nav a{
-  padding:.55rem .9rem;
-  border-radius:10px;
-  display:inline-block;
-  color:#222;
-  position:relative;
+
+
+/* Active page underline indicator */
+.nav a {
+  position: relative;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
-.nav a:hover{
-  background:var(--panel);
-  text-decoration:none;
-  border:1px solid var(--border);
+
+.nav a:hover {
+  color: var(--accent);
 }
-.nav a.active,
-.nav a[aria-current="page"]{
-  background:var(--panel);
-  border:1px solid var(--border);
-  box-shadow:0 1px 0 rgba(0,0,0,.02);
-  font-weight:600;
+
+/* underline indicator */
+.nav a.active::after,
+.nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 3px;
+  background: #f9cc45; /* yellow highlight */
+  border-radius: 3px;
 }
+
+/* optional hover underline animation */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 3px;
+  background: transparent;
+  transition: background 0.2s ease;
+}
+.nav a:hover::after {
+  background: rgba(249, 204, 69, 0.4);
+}
+
+
+
 
 /* Content — remove the big framed box */
 .content{
