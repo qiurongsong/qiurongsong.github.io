@@ -21,30 +21,46 @@ html,body{
 }
 a{color:var(--link);text-decoration:none}
 a:hover{text-decoration:underline}
-.wrapper{max-width:980px;margin:0 auto;padding:1.25rem}
+
+/* Wider layout for image-forward look */
+.wrapper{max-width:1100px;margin:0 auto;padding:1.25rem}
 
 /* Header */
 .site-header{
   display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;
   margin-bottom:1.25rem;
-  background:var(--bg);
-  padding:1rem;
+  background:#fff;
+  padding:1.1rem;
   border-bottom:1px solid var(--border);
 }
 .brand{display:flex;align-items:baseline;gap:.5rem}
 .brand-link{font-weight:700;color:var(--text);font-size:1.25rem}
 .tagline{color:var(--muted);font-size:.95rem}
 
+/* Nav */
 .nav a{
-  padding:.5rem .75rem;border-radius:8px;display:inline-block;color:#222;
+  padding:.55rem .9rem;
+  border-radius:10px;
+  display:inline-block;
+  color:#222;
+  position:relative;
 }
 .nav a:hover{
   background:var(--panel);
   text-decoration:none;
-  border:1px solid var(--border)
+  border:1px solid var(--border);
 }
 
-/* Main content containers */
+/* Active page banner/pill */
+.nav a.active,
+.nav a[aria-current="page"]{
+  background:var(--panel);
+  border:1px solid var(--border);
+  box-shadow:0 1px 0 rgba(0,0,0,.02);
+  font-weight:600;
+}
+
+/* Main content container */
 .content{
   background:var(--bg);
   border:1px solid var(--border);
@@ -52,11 +68,11 @@ a:hover{text-decoration:underline}
   padding:1.25rem
 }
 
-/* Hero */
+/* Hero with larger portrait */
 .hero{
-  display:grid;grid-template-columns:120px 1fr;gap:1rem;align-items:center;margin-bottom:1rem
+  display:grid;grid-template-columns:240px 1fr;gap:1.25rem;align-items:center;margin-bottom:1.25rem
 }
-.avatar{width:120px;height:120px;border-radius:12px;object-fit:cover;border:1px solid var(--border)}
+.avatar{width:220px;height:220px;border-radius:12px;object-fit:cover;border:1px solid var(--border)}
 .intro h1{margin:0 0 .25rem 0}
 .contact{color:var(--muted)}
 
@@ -77,13 +93,13 @@ a:hover{text-decoration:underline}
 .news-list li{padding:.6rem .25rem;border-bottom:1px dashed var(--border)}
 .news-list li:last-child{border-bottom:0}
 
-/* Cards (Projects) */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+/* Cards (Projects) with more breathing room */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
 .card{
   background:var(--card);
   border:1px solid var(--border);
   border-radius:12px;
-  padding:1rem;
+  padding:1.15rem;
   box-shadow:0 1px 0 rgba(0,0,0,.02)
 }
 .card h3{margin-top:.25rem}
@@ -96,9 +112,9 @@ a:hover{text-decoration:underline}
 /* Simple grids */
 .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
 
-/* Photos */
-.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.5rem}
-.photo-grid img{width:100%;height:140px;object-fit:cover;border-radius:10px;border:1px solid var(--border)}
+/* Photos: bigger thumbnails */
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem}
+.photo-grid img{width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--border)}
 
 /* Footer */
 .site-footer{
@@ -110,7 +126,11 @@ a:hover{text-decoration:underline}
 .site-footer p{margin:0;color:var(--muted)}
 
 /* Responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:200px 1fr}
+  .avatar{width:180px;height:180px}
+}
 @media (max-width:600px){
   .hero{grid-template-columns:1fr}
-  .avatar{width:96px;height:96px}
+  .avatar{width:140px;height:140px}
 }
