@@ -100,22 +100,40 @@ a:hover{text-decoration:underline}
 section{margin:0 0 2rem 0}
 
 /* Home hero: big photo + summary */
-.hero{
-  display:grid;
-  grid-template-columns:320px 1fr;
-  gap:2rem;
-  align-items:center;
-  margin:1.25rem 0 2.5rem 0;
+/* Add breathing room at the top of the homepage hero */
+.hero {
+  display: grid;
+  grid-template-columns: 360px 1fr;  /* ⬆ make the photo a bit larger */
+  gap: 2.5rem;                       /* ⬆ more space between photo and text */
+  align-items: center;
+  margin: 3rem 0 3rem 0;             /* ⬆ more space above and below the hero */
+  padding-top: 1rem;                 /* ⬆ pushes content down from the header */
 }
-.avatar{
-  width:300px;
-  height:300px;
-  border-radius:12px;
-  object-fit:cover;
-  border:1px solid var(--border);
+
+/* Enlarge and soften the photo */
+.avatar {
+  width: 340px;
+  height: 340px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* subtle depth */
 }
-.intro h1{margin:0 0 .5rem 0;font-size:2rem;line-height:1.25}
-.intro p{font-size:1.05rem}
+
+/* Add spacing below the header to give the page air */
+.site-header {
+  padding: 1.5rem 0; /* ⬆ slightly taller header area */
+}
+
+/* Optional: add more vertical space between name and paragraph */
+.intro h1 {
+  margin-bottom: 1.25rem;
+}
+
+/* Slightly tone down paragraph width for better readability on wide screens */
+.intro p {
+  max-width: 700px;
+}
 
 /* News pushed lower visually; add top divider */
 .news{padding-top:1.5rem;border-top:1px solid var(--border)}
