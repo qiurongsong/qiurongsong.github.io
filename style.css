@@ -174,7 +174,21 @@ section{margin:0 0 2rem 0}
 .meta{color:var(--muted);font-size:.95rem}
 
 /* Publications */
-.pubs{padding-left:1.25rem}
+/* .pubs{padding-left:1.25rem} */
+
+/* Better spacing for publication list */
+.pubs li {
+  margin-bottom: 1.25rem;   /* adds vertical space between publications */
+  line-height: 1.7;         /* improves paragraph readability */
+}
+
+/* Optional: make each paper visually distinct but clean */
+.pubs li:not(:last-child) {
+  border-bottom: 1px dashed var(--border);  /* subtle divider between entries */
+  padding-bottom: 1rem;                     /* space below text before divider */
+}
+
+
 .lead{color:var(--muted)}
 
 /* Personal photo grid — bigger */
