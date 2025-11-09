@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Qiurong Song | News</title>
+  <title>Qiurong Song | Personal</title>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5TRQN7EX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E5TRQN7EX7');
+  </script>
+
+
 </head>
+  <script>
+  (function() {
+    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav a').forEach(a => {
+      const href = (a.getAttribute('href') || '').toLowerCase();
+      if ((path === '' && href === 'index.html') || href === path) {
+        a.setAttribute('aria-current', 'page');
+        a.classList.add('active');
+      }
+    });
+  })();
+</script>
+
 <body>
   <div class="wrapper">
-    <header class="site-header">
-      <div class="brand">
-        <a href="index.html" class="brand-link">Qiurong Song</a>
-        <!-- <span class="tagline">HCI · Privacy · Healthcare</span> -->
-      </div>
-      <nav class="nav">
+    
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="brand-link">Qiurong Song</a>
+      <!-- <span class="tagline">HCI · Privacy · Healthcare</span> -->
+    </div>
+    <nav class="nav">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="publications.html">Publications</a>
       <a href="news.html">News</a>
       <a href="personal.html">Personal</a>
     </nav>
-    </header>
+  </header>
 
     <main class="content">
       <section class="news">
