@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Qiurong Song | Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="brand">
+        <a href="index.html" class="brand-link">Qiurong Song</a>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+        <a href="personal.html">Personal</a>
+        <a href="contact.html" aria-current="page" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="content">
+      <h1>Contact Me</h1>
+      // <p class="lead">Feel free to reach out — I’m always happy to connect about research, collaboration, or just to chat 😊</p>
+
+      <section class="contact-info">
+        <p><i class="fa-solid fa-envelope"></i> 
+          <a href="mailto:qiurongsong@psu.edu">qiurongsong(at)psu(dot)edu</a></p>
+
+        <p><i class="fa-solid fa-location-dot"></i>  
+          E342 Westgate Building<br />
+          University Park, PA 16802<br />
+          College of Information Sciences and Technology<br />
+          Penn State University
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Qiurong Song </p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
