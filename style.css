@@ -206,3 +206,35 @@ body.index-page .hero-socials a {
   line-height: 1.75;       /* improves readability */
   font-size: 1.05rem;      /* optional: slightly larger text */
 }
+
+
+/* Larger, more open typography for all pages */
+body {
+  font-size: 1.1rem;     /* ⬆ slightly larger base text */
+  line-height: 1.75;     /* improves readability */
+}
+
+/* Larger hero heading across the site */
+.intro h1 {
+  font-size: 2.4rem;
+}
+
+/* Make hyperlinks a bit bolder and clearer everywhere */
+a {
+  font-weight: 500;
+}
+
+/* Bigger and more prominent social links (used on homepage and footer) */
+.hero-socials a,
+.site-footer .social-links a {
+  font-size: 2rem;        /* ⬆ larger icons */
+  margin-right: 1.2rem;
+}
+
+/* Better readability: paragraph spacing everywhere */
+p {
+  margin-bottom: 1rem;     /* space between paragraphs */
+  line-height: 1.75;       /* improves readability */
+  font-size: 1.05rem;      /* consistent readable text */
+}
+
