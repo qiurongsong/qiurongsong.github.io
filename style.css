@@ -188,6 +188,36 @@ section{margin:0 0 2rem 0}
   padding-bottom: 1rem;                     /* space below text before divider */
 }
 
+/* Publication page: scholar + researchgate links */
+.pub-links {
+  margin: 1rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.pub-links a {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.05rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.pub-links a:hover {
+  color: #003f88; /* slightly deeper blue */
+  transform: translateY(-2px);
+}
+
+.pub-links i {
+  font-size: 1.2rem;
+}
+
+
+
 
 .lead{color:var(--muted)}
 
