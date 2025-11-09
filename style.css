@@ -22,7 +22,7 @@ html,body{
 a{color:var(--link);text-decoration:none}
 a:hover{text-decoration:underline}
 
-/* Wider layout for image-forward look */
+/* Wider layout */
 .wrapper{max-width:1100px;margin:0 auto;padding:1.25rem}
 
 /* Header */
@@ -30,7 +30,7 @@ a:hover{text-decoration:underline}
   display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;
   margin-bottom:1.25rem;
   background:#fff;
-  padding:1.1rem;
+  padding:1.1rem 0; /* no boxed feel */
   border-bottom:1px solid var(--border);
 }
 .brand{display:flex;align-items:baseline;gap:.5rem}
@@ -50,8 +50,6 @@ a:hover{text-decoration:underline}
   text-decoration:none;
   border:1px solid var(--border);
 }
-
-/* Active page banner/pill */
 .nav a.active,
 .nav a[aria-current="page"]{
   background:var(--panel);
@@ -60,40 +58,44 @@ a:hover{text-decoration:underline}
   font-weight:600;
 }
 
-/* Main content container */
+/* Content — remove the big framed box */
 .content{
-  background:var(--bg);
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:1.25rem
+  background:transparent;
+  border:0;
+  border-radius:0;
+  padding:0;
 }
 
-/* Hero with larger portrait */
+/* Section spacing */
+section{margin:0 0 2rem 0}
+
+/* Home hero: big photo + summary */
 .hero{
-  display:grid;grid-template-columns:240px 1fr;gap:1.25rem;align-items:center;margin-bottom:1.25rem
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:2rem;
+  align-items:center;
+  margin:1.25rem 0 2.5rem 0;
 }
-.avatar{width:220px;height:220px;border-radius:12px;object-fit:cover;border:1px solid var(--border)}
-.intro h1{margin:0 0 .25rem 0}
-.contact{color:var(--muted)}
-
-/* Buttons */
-.cta-row{display:flex;gap:.75rem;margin-top:.75rem}
-.btn{
-  background:var(--accent);
-  color:#ffffff;
-  border:1px solid var(--accent);
-  padding:.6rem 1rem;border-radius:10px;font-weight:600
+.avatar{
+  width:300px;
+  height:300px;
+  border-radius:12px;
+  object-fit:cover;
+  border:1px solid var(--border);
 }
-.btn.ghost{background:#ffffff;color:var(--text);border:1px solid var(--border)}
-.btn:hover{text-decoration:none;filter:brightness(1.03)}
+.intro h1{margin:0 0 .5rem 0;font-size:2rem;line-height:1.25}
+.intro p{font-size:1.05rem}
 
-/* News */
-.news h2{margin-top:.25rem}
+/* News pushed lower visually; add top divider */
+.news{padding-top:1.5rem;border-top:1px solid var(--border)}
+.news h2{margin-top:0}
 .news-list{list-style:none;padding:0;margin:0}
 .news-list li{padding:.6rem .25rem;border-bottom:1px dashed var(--border)}
 .news-list li:last-child{border-bottom:0}
+.news-actions{margin-top:.75rem}
 
-/* Cards (Projects) with more breathing room */
+/* Cards (projects) */
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
 .card{
   background:var(--card);
@@ -109,28 +111,25 @@ a:hover{text-decoration:underline}
 .pubs{padding-left:1.25rem}
 .lead{color:var(--muted)}
 
-/* Simple grids */
-.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
-
-/* Photos: bigger thumbnails */
-.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem}
-.photo-grid img{width:100%;height:220px;object-fit:cover;border-radius:10px;border:1px solid var(--border)}
+/* Personal photo grid — bigger */
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.85rem}
+.photo-grid img{width:100%;height:240px;object-fit:cover;border-radius:10px;border:1px solid var(--border)}
 
 /* Footer */
 .site-footer{
   display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;
-  margin-top:1rem;padding:1rem;background:var(--bg);
+  margin-top:2rem;padding:1rem 0;background:var(--bg);
   border-top:1px solid var(--border)
 }
 .site-footer .social-links a{margin-right:.5rem;font-size:1.1rem;color:#333}
 .site-footer p{margin:0;color:var(--muted)}
 
 /* Responsive */
-@media (max-width:900px){
-  .hero{grid-template-columns:200px 1fr}
-  .avatar{width:180px;height:180px}
+@media (max-width:1000px){
+  .hero{grid-template-columns:260px 1fr}
+  .avatar{width:240px;height:240px}
 }
-@media (max-width:600px){
+@media (max-width:700px){
   .hero{grid-template-columns:1fr}
-  .avatar{width:140px;height:140px}
+  .avatar{width:200px;height:200px;justify-self:start}
 }
