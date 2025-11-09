@@ -20,18 +20,7 @@
 
 
 </head>
-  <script>
-  (function() {
-    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
-    document.querySelectorAll('.nav a').forEach(a => {
-      const href = (a.getAttribute('href') || '').toLowerCase();
-      if ((path === '' && href === 'index.html') || href === path) {
-        a.setAttribute('aria-current', 'page');
-        a.classList.add('active');
-      }
-    });
-  })();
-</script>
+
 
 <body>
   <div class="wrapper">
@@ -104,5 +93,17 @@
       });
     })();
   </script>
+    <script>
+  (function() {
+    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav a').forEach(a => {
+      const href = (a.getAttribute('href') || '').toLowerCase();
+      if ((path === '' && href === 'index.html') || href === path) {
+        a.setAttribute('aria-current', 'page');
+        a.classList.add('active');
+      }
+    });
+  })();
+</script>
 </body>
 </html>
