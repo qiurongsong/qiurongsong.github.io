@@ -21,13 +21,26 @@
 
   <meta name="description" content="Qiurong Song — Ph.D. candidate in HCI at Penn State focusing on privacy and healthcare." />
 </head>
+  <script>
+  (function() {
+    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav a').forEach(a => {
+      const href = (a.getAttribute('href') || '').toLowerCase();
+      if ((path === '' && href === 'index.html') || href === path) {
+        a.setAttribute('aria-current', 'page');
+        a.classList.add('active');
+      }
+    });
+  })();
+</script>
+
 <body>
   <div class="wrapper">
     
   <header class="site-header">
     <div class="brand">
       <a href="index.html" class="brand-link">Qiurong Song</a>
-      <span class="tagline">HCI · Privacy · Healthcare</span>
+      <!-- <span class="tagline">HCI · Security & Privacy</span> -->
     </div>
     <nav class="nav">
       <a href="index.html">Home</a>
@@ -45,21 +58,31 @@
           <p>I’m a Ph.D. candidate in Human–Computer Interaction (HCI) at
             <a href="https://ist.psu.edu/" target="_blank" rel="noopener noreferrer">Penn State</a>.
             I’m part of the <a href="https://sites.psu.edu/healthandplay/" target="_blank" rel="noopener noreferrer">Health and Play Lab</a>,
-            advised by <a href="https://sites.psu.edu/xinninggui/" target="_blank" rel="noopener noreferrer">Dr. Xinning Gui</a>
+            luckily advised by <a href="https://sites.psu.edu/xinninggui/" target="_blank" rel="noopener noreferrer">Dr. Xinning Gui</a>
             and <a href="https://sites.psu.edu/yubokou/" target="_blank" rel="noopener noreferrer">Dr. Yubo Kou</a>.
-            My research explores HCI, privacy, and healthcare.
+
+            My research lies at the intersection of Human-Computer Interaction (HCI), Security and Privacy (S&P), and Computer-Supported Cooperative Work (CSCW). 
+            I investigate how everyday digital technologies shape the privacy and security risks faced by at-risk users and design sociotechnical solutions that enhance online safety, privacy, and autonomy. 
+            In particular, my work explores how women and people with uteruses, children, and content creators navigate privacy and security challenges in contexts such as reproductive health technologies and game ecosystems. 
           </p>
-          <p class="contact">Email: <span>qiurongsong [at] psu [dot] edu</span></p>
+          <!-- <p class="contact">Email: <span>qiurongsong [at] psu [dot] edu</span></p>
           <div class="cta-row">
             <a class="btn" href="publications.html">Selected publications</a>
             <a class="btn ghost" href="projects.html">Recent projects</a>
-          </div>
+          </div> -->
         </div>
       </section>
 
       <section class="news">
         <h2>Recent news</h2>
         <ul class="news-list">
+
+
+<li><strong>Sept 2025:</strong> My first-authored full paper was accepted to IEEE Symposium on Security and Privacy (S&P) 2026!</li>
+<li><strong>Aug 2025:</strong> Our research was featured by <a href="https://www.psu.edu/news/research/story/sibling-and-friend-game-time-key-keeping-children-safe-online-video-games" target="_blank" rel="noopener noreferrer">Penn State News</a>.</li>
+<li><strong>July 2025:</strong> Invited to serve on the Program Committee for the Full Papers Track at GROUP 2027.</li>
+<li><strong>May 2025:</strong> Began my role as Assistant to the Paper Chairs for CHI 2026 — excited to contribute to the community in this capacity.</li>
+
           <li><strong>Mar 2025:</strong> Presented a poster on my dissertation work at
             <a href="https://gradschool.psu.edu/student-support/professional-development/graduate-exhibition" target="_blank" rel="noopener noreferrer">Penn State's Graduate Exhibition</a>.
           </li>
