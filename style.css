@@ -149,4 +149,24 @@ section{margin:0 0 2rem 0}
   color: var(--accent);
   transform: scale(1.15);
 }
+/* Larger, more open typography for the homepage */
+body.index-page {
+  font-size: 1.1rem;   /* ⬆ slightly larger base text */
+  line-height: 1.75;   /* improves readability */
+}
 
+/* Larger hero heading */
+body.index-page .intro h1 {
+  font-size: 2.4rem;
+}
+
+/* Make hyperlinks a bit bolder and clearer */
+body.index-page a {
+  font-weight: 500;
+}
+
+/* Bigger and more prominent social links */
+body.index-page .hero-socials a {
+  font-size: 2rem;  /* ⬆ even larger icons */
+  margin-right: 1.2rem;
+}
