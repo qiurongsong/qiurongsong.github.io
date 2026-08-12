@@ -294,3 +294,15 @@ section{margin:0 0 2rem 0}
   text-decoration: underline;
 }
 
+.job-market {
+  margin: 0 0 1.5rem;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid #8c1d40;
+  background: #f8eef2;
+  color: #3a1723;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 4px;
+}
+
