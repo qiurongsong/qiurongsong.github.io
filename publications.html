@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Qiurong Song | Selected Publications</title>
+  <title>Qiurong Song | Publications</title>
   
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="publications.css" />
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   
@@ -23,7 +24,7 @@
 </head>
 
 
-<body>
+<body class="publications-layout">
   <div class="wrapper">
     
   <header class="site-header">
@@ -31,10 +32,10 @@
       <a href="index.html" class="brand-link">Qiurong Song</a>
       <!-- <span class="tagline">HCI · Privacy · Healthcare</span> -->
     </div>
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
+        <a href="publications.html" aria-current="page">Publications</a>
         <a href="news.html">News</a>
         <a href="personal.html">Personal</a>
         <a href="contact.html">Contact</a>
@@ -42,153 +43,221 @@
   </header>
 
     <main class="content publications-page">
-      <h1>Selected Publications</h1>
-
-      <div class="pub-links">
-        <a href="https://scholar.google.com/citations?user=hg3heAoAAAAJ" target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-graduation-cap"></i> Google Scholar
-        </a>
-        <a href="https://www.researchgate.net/profile/Qiurong-Song" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-researchgate"></i> ResearchGate
-        </a>
-      </div>
-
-      <style>
-        .publications-page .pub-section {
-          margin-top: 2rem;
-        }
-        .publications-page .pub-list {
-          list-style: none;
-          margin: 1rem 0 2rem;
-          padding: 0;
-        }
-        .publications-page .pub-item {
-          margin: 0 0 1.35rem;
-          line-height: 1.55;
-        }
-        .publications-page .pub-title {
-          font-weight: 700;
-          margin-bottom: 0.15rem;
-        }
-        .publications-page .pub-authors,
-        .publications-page .pub-venue {
-          margin: 0.1rem 0;
-        }
-        .publications-page .pub-venue {
-          font-style: italic;
-        }
-        .publications-page .pub-link {
-          font-style: normal;
-          white-space: nowrap;
-        }
-      </style>
+      <header class="pub-intro">
+        <h1>Publications</h1>
+        <p class="pub-summary">12 conference papers <span aria-hidden="true">·</span> 4 journal articles</p>
+        <div class="pub-links">
+          <a href="https://scholar.google.com/citations?user=hg3heAoAAAAJ" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://www.researchgate.net/profile/Qiurong-Song" target="_blank" rel="noopener noreferrer"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate <span aria-hidden="true">↗</span></a>
+        </div>
+        <nav class="pub-jump-links" aria-label="Publication sections">
+          <a href="#conference-publications">Conference papers <span>12</span></a>
+          <a href="#journal-publications">Journal articles <span>4</span></a>
+          <a href="#other-publications">Doctoral consortium &amp; posters <span>2</span></a>
+        </nav>
+      </header>
 
       <section class="pub-section" aria-labelledby="conference-publications">
-        <h2 id="conference-publications">Conference Publications</h2>
-        <ol class="pub-list">
+        <div class="pub-section-heading"><h2 id="conference-publications">Conference Publications</h2><span class="pub-count">12</span></div>
+        
+        <ol class="pub-list" role="list">
           <li class="pub-item" id="c12">
-            <div class="pub-title">[C.12] How Children Assess Digital Safety Risk in Gaming Platforms: A Case Study of Roblox</div>
-            <p class="pub-authors">Zinan Zhang, <strong>Qiurong Song</strong>, Xinning Gui, Junnan Yu, Sunhye Bai, and Yubo Kou.</p>
-            <p class="pub-venue">Accepted to the 33rd ACM Conference on Computer and Communications Security (CCS ’26). </p>
+            <div class="pub-meta"><span class="pub-venue-label">USENIX Security 2026</span><span class="pub-rate">Acceptance: <strong>13.2%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C12]</span> Digital Risks and Coping Practices among Roblox Game Creators</h3>
+              <p class="pub-authors"><strong>Qiurong Song</strong>, Rie Helene (Lindy) Hernandez, Xinning Gui, and Yubo Kou.</p>
+              <p class="pub-citation">Proceedings of the 35th USENIX Security Symposium, pp. 6721–6740.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://www.usenix.org/conference/usenixsecurity26/presentation/song-qiurong" target="_blank" rel="noopener noreferrer" aria-label="Article: Digital Risks and Coping Practices among Roblox Game Creators">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://www.usenix.org/system/files/usenixsecurity26-song-qiurong.pdf" target="_blank" rel="noopener noreferrer" aria-label="PDF: Digital Risks and Coping Practices among Roblox Game Creators">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-          
-          
           <li class="pub-item" id="c11">
-            <div class="pub-title">[C.11] Surveillance as Care: Configuring Baby Monitors in the Home</div>
-            <p class="pub-authors"><strong>Qiurong Song</strong>, Yunhan Liu, Zinan Zhang, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI ’26). <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3772318.3791462" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">S&amp;P 2026</span><span class="pub-rate">Acceptance: <strong>12.7%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C11]</span> Usable Anonymity in Reproductive Health Privacy</h3>
+              <p class="pub-authors"><strong>Qiurong Song</strong>, Yanlai Wu, Rie Helene (Lindy) Hernandez, Yao Li, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Proceedings of the 47th IEEE Symposium on Security and Privacy, pp. 3627–3646.</p>
+              <p class="pub-award"><span aria-hidden="true">✦</span> CSAW 2026 Best Social Impact Award</p>
+              <div class="pub-actions"><a class="pub-link" href="paper/SP2026_Usable_Anonymity_in_Reproductive_Health_Privacy.pdf" target="_blank" rel="noopener noreferrer" aria-label="PDF: Usable Anonymity in Reproductive Health Privacy">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c10">
-            <div class="pub-title">[C.10] Player Safety by Design: Co-Designing Child-Centered Safety Mechanisms with Children</div>
-            <p class="pub-authors">Zinan Zhang, <strong>Qiurong Song</strong>, Rie Helene (Lindy) Hernandez, Yunhan Liu, Elena Koung, Junnan Yu, Sunhye Bai, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI ’26). <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3772318.3791090" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">CHI 2026</span><span class="pub-rate">Acceptance: <strong>25.3%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C10]</span> Surveillance as Care: Configuring Baby Monitors in the Home</h3>
+              <p class="pub-authors"><strong>Qiurong Song</strong>, Yunhan Liu, Zinan Zhang, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems, Article 272, pp. 1–16.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3772318.3791462" target="_blank" rel="noopener noreferrer" aria-label="Article: Surveillance as Care: Configuring Baby Monitors in the Home">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3772318.3791462" target="_blank" rel="noopener noreferrer" aria-label="PDF: Surveillance as Care: Configuring Baby Monitors in the Home">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c9">
-            <div class="pub-title">[C.9] Digital Risks and Coping Practices among Roblox Game Creators</div>
-            <p class="pub-authors"><strong>Qiurong Song</strong>, Rie Helene (Lindy) Hernandez, Xinning Gui, and Yubo Kou.</p>
-            <p class="pub-venue">Accepted to the 35th USENIX Security Symposium (USENIX Security ’26). <a class="pub-link" href="https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_song-qiurong.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">CHI 2026</span><span class="pub-rate">Acceptance: <strong>25.3%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C9]</span> Player Safety by Design: Co-Designing Child-Centered Safety Mechanisms with Children</h3>
+              <p class="pub-authors">Zinan Zhang, <strong>Qiurong Song</strong>, Rie Helene (Lindy) Hernandez, Yunhan Liu, Elena Koung, Junnan Yu, Sunhye Bai, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems, Article 1702, pp. 1–21.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3772318.3791090" target="_blank" rel="noopener noreferrer" aria-label="Article: Player Safety by Design: Co-Designing Child-Centered Safety Mechanisms with Children">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3772318.3791090" target="_blank" rel="noopener noreferrer" aria-label="PDF: Player Safety by Design: Co-Designing Child-Centered Safety Mechanisms with Children">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c8">
-            <div class="pub-title">[C.8] Usable Anonymity in Reproductive Health Privacy</div>
-            <p class="pub-authors"><strong>Qiurong Song</strong>, Yanlai Wu, Rie Helene (Lindy) Hernandez, Yao Li, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Accepted to the 47th IEEE Symposium on Security and Privacy (IEEE S&amp;P ’26). <a class="pub-link" href="https://scholarsphere.psu.edu/resources/02fcbf2c-b15d-4577-8080-715f3bb6a9e9" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">CCS 2026</span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C8]</span> How Children Assess Digital Safety Risk in Gaming Platforms: A Case Study of Roblox</h3>
+              <p class="pub-authors">Zinan Zhang, <strong>Qiurong Song</strong>, Xinning Gui, Junnan Yu, Sunhye Bai, and Yubo Kou.</p>
+              <p class="pub-citation">Proceedings of the 33rd ACM Conference on Computer and Communications Security, pp. 5046–5060.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3830454.3846726" target="_blank" rel="noopener noreferrer" aria-label="Article: How Children Assess Digital Safety Risk in Gaming Platforms: A Case Study of Roblox">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3830454.3846726" target="_blank" rel="noopener noreferrer" aria-label="PDF: How Children Assess Digital Safety Risk in Gaming Platforms: A Case Study of Roblox">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c7">
-            <div class="pub-title">[C.7] How Predatory Monetization Designs Manifest in Child-Friendly Video Games</div>
-            <p class="pub-authors"><strong>Qiurong Song</strong>, Zinan Zhang, Rie Helene (Lindy) Hernandez, Xinning Gui, and Yubo Kou.</p>
-            <p class="pub-venue">Proceedings of the Twenty-First Symposium on Usable Privacy and Security (SOUPS ’25). <a class="pub-link" href="https://www.usenix.org/system/files/soups2025-song.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">SOUPS 2025</span><span class="pub-rate">Acceptance: <strong>19.1%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C7]</span> How Predatory Monetization Designs Manifest in Child-Friendly Video Games</h3>
+              <p class="pub-authors"><strong>Qiurong Song</strong>, Zinan Zhang, Rie Helene (Lindy) Hernandez, Xinning Gui, and Yubo Kou.</p>
+              <p class="pub-citation">Proceedings of the Twenty-First Symposium on Usable Privacy and Security, pp. 515–534.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://www.usenix.org/system/files/soups2025-song.pdf" target="_blank" rel="noopener noreferrer" aria-label="PDF: How Predatory Monetization Designs Manifest in Child-Friendly Video Games">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c6">
-            <div class="pub-title">[C.6] Understanding Users’ Perception of Personally Identifiable Information</div>
-            <p class="pub-authors"><strong>Qiurong Song</strong>, Yanlai Wu, Rie Helene (Lindy) Hernandez, Yao Li, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI ’25). <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3706598.3713783" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">CHI 2025</span><span class="pub-rate">Acceptance: <strong>24.9%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C6]</span> Understanding Users’ Perception of Personally Identifiable Information</h3>
+              <p class="pub-authors"><strong>Qiurong Song</strong>, Yanlai Wu, Rie Helene (Lindy) Hernandez, Yao Li, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems, Article 240, pp. 1–24.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3706598.3713783" target="_blank" rel="noopener noreferrer" aria-label="Article: Understanding Users’ Perception of Personally Identifiable Information">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3706598.3713783" target="_blank" rel="noopener noreferrer" aria-label="PDF: Understanding Users’ Perception of Personally Identifiable Information">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c5">
-            <div class="pub-title">[C.5] Reflecting Upon The Unintended Consequences of Personal Informatics Systems: A Systematic Review of Empirical Studies</div>
-            <p class="pub-authors">Yuhan Luo, Xinning Gui, Xianghua (Sharon) Ding, Xi Zheng, Rie Helene (Lindy) Hernandez, Zhuoyang Li, and <strong>Qiurong Song</strong>.</p>
-            <p class="pub-venue">Proceedings of the 2025 ACM Designing Interactive Systems Conference (DIS ’25). <a class="pub-link" href="https://eprints.gla.ac.uk/354997/1/354997.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">DIS 2025</span><span class="pub-rate">Acceptance: <strong>24%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C5]</span> Reflecting Upon The Unintended Consequences of Personal Informatics Systems: A Systematic Review of Empirical Studies</h3>
+              <p class="pub-authors">Yuhan Luo, Xinning Gui, Xianghua (Sharon) Ding, Xi Zheng, Rie Helene (Lindy) Hernandez, Zhuoyang Li, and <strong>Qiurong Song</strong>.</p>
+              <p class="pub-citation">Proceedings of the 2025 ACM Designing Interactive Systems Conference, pp. 2847–2866.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3715336.3735746" target="_blank" rel="noopener noreferrer" aria-label="Article: Reflecting Upon The Unintended Consequences of Personal Informatics Systems: A Systematic Review of Empirical Studies">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://eprints.gla.ac.uk/354997/1/354997.pdf" target="_blank" rel="noopener noreferrer" aria-label="PDF: Reflecting Upon The Unintended Consequences of Personal Informatics Systems: A Systematic Review of Empirical Studies">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c4">
-            <div class="pub-title">[C.4] “Our Users’ Privacy is Paramount to Us”: A Discourse Analysis of How Period and Fertility Tracking App Companies Address the Roe v Wade Overturn</div>
-            <p class="pub-authors"><strong>Qiurong Song</strong>, Rie Helene (Lindy) Hernandez, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI ’24). <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642384" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">CHI 2024</span><span class="pub-rate">Acceptance: <strong>26.4%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C4]</span> “Our Users’ Privacy is Paramount to Us”: A Discourse Analysis of How Period and Fertility Tracking App Companies Address the Roe v Wade Overturn</h3>
+              <p class="pub-authors"><strong>Qiurong Song</strong>, Rie Helene (Lindy) Hernandez, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems, Article 816, pp. 1–21.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3613904.3642384" target="_blank" rel="noopener noreferrer" aria-label="Article: “Our Users’ Privacy is Paramount to Us”: A Discourse Analysis of How Period and Fertility Tracking App Companies Address the Roe v Wade Overturn">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642384" target="_blank" rel="noopener noreferrer" aria-label="PDF: “Our Users’ Privacy is Paramount to Us”: A Discourse Analysis of How Period and Fertility Tracking App Companies Address the Roe v Wade Overturn">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c3">
-            <div class="pub-title">[C.3] “At the end of the day, I am accountable”: Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management</div>
-            <p class="pub-authors">Rie Helene (Lindy) Hernandez, <strong>Qiurong Song</strong>, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems (CHI ’24). <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642151" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">CHI 2024</span><span class="pub-rate">Acceptance: <strong>26.4%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C3]</span> “At the end of the day, I am accountable”: Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management</h3>
+              <p class="pub-authors">Rie Helene (Lindy) Hernandez, <strong>Qiurong Song</strong>, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems, Article 382, pp. 1–20.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3613904.3642151" target="_blank" rel="noopener noreferrer" aria-label="Article: “At the end of the day, I am accountable”: Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642151" target="_blank" rel="noopener noreferrer" aria-label="PDF: “At the end of the day, I am accountable”: Gig Workers’ Self-Tracking for Multi-Dimensional Accountability Management">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c2">
-            <div class="pub-title">[C.2] AutoML in The Wild: Obstacles, Workarounds, and Expectations</div>
-            <p class="pub-authors">Yuan Sun, <strong>Qiurong Song</strong>, Xinning Gui, Fenglong Ma, and Ting Wang.</p>
-            <p class="pub-venue">Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI ’23). <em>(Best Paper Honorable Mention Award)</em> <a class="pub-link" href="https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/3/156417/files/2023/05/AutoML-in-The-Wild-Obstacles-Workarounds-and-Expectations-.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">CHI 2023</span><span class="pub-rate">Acceptance: <strong>27.6%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C2]</span> AutoML in The Wild: Obstacles, Workarounds, and Expectations</h3>
+              <p class="pub-authors">Yuan Sun, <strong>Qiurong Song</strong>, Xinning Gui, Fenglong Ma, and Ting Wang.</p>
+              <p class="pub-citation">Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems, Article 247, pp. 1–15.</p>
+              <p class="pub-award"><span aria-hidden="true">✦</span> Best Paper Honorable Mention</p>
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3544548.3581082" target="_blank" rel="noopener noreferrer" aria-label="Article: AutoML in The Wild: Obstacles, Workarounds, and Expectations">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://bpb-us-e1.wpmucdn.com/sites.psu.edu/dist/3/156417/files/2023/05/AutoML-in-The-Wild-Obstacles-Workarounds-and-Expectations-.pdf" target="_blank" rel="noopener noreferrer" aria-label="PDF: AutoML in The Wild: Obstacles, Workarounds, and Expectations">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="c1">
-            <div class="pub-title">[C.1] How Misinformation Density Affects Health Information Search</div>
-            <p class="pub-authors"><strong>Qiurong Song</strong> and Jiepu Jiang.</p>
-            <p class="pub-venue">Proceedings of the ACM Web Conference 2022 (WWW ’22). <a class="pub-link" href="https://jiepujiang.github.io/papers/www22_misinfo.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">WWW 2022</span><span class="pub-rate">Acceptance: <strong>17.7%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[C1]</span> How Misinformation Density Affects Health Information Search</h3>
+              <p class="pub-authors"><strong>Qiurong Song</strong> and Jiepu Jiang.</p>
+              <p class="pub-citation">Proceedings of the ACM Web Conference 2022, pp. 2668–2677.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3485447.3512141" target="_blank" rel="noopener noreferrer" aria-label="Article: How Misinformation Density Affects Health Information Search">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://jiepujiang.github.io/papers/www22_misinfo.pdf" target="_blank" rel="noopener noreferrer" aria-label="PDF: How Misinformation Density Affects Health Information Search">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
         </ol>
       </section>
 
       <section class="pub-section" aria-labelledby="journal-publications">
-        <h2 id="journal-publications">Journal Publications</h2>
-        <ol class="pub-list">
+        <div class="pub-section-heading"><h2 id="journal-publications">Journal Publications</h2><span class="pub-count">4</span></div>
+        <p class="pub-section-note">CSCW and CHI PLAY full papers are archival journal articles published in PACMHCI and presented at their associated conferences.</p>
+        <ol class="pub-list" role="list">
           <li class="pub-item" id="j4">
-            <div class="pub-title">[J.4] From Stream to Stake: Gamblification Practices and User Perceptions on Twitch</div>
-            <p class="pub-authors">Yunhan Liu, Sam Moradzadeh, <strong>Qiurong Song</strong>, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Accepted to the Proceedings of the ACM on Human-Computer Interaction (CHI PLAY '26).</p>
+            <div class="pub-meta"><span class="pub-venue-label">CSCW 2026</span><span class="pub-rate">Acceptance: <strong>30.5%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[J4]</span> “I usually profit because I know when to stop”: Understanding Teenagers’ Risk Perception and Mitigation Strategies of Gambling from Reddit</h3>
+              <p class="pub-authors">Yunhan Liu, Elena Koung, <strong>Qiurong Song</strong>, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Proceedings of the ACM on Human-Computer Interaction, 10(2), Article CSCW023, pp. 1–34.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3788059" target="_blank" rel="noopener noreferrer" aria-label="Article: “I usually profit because I know when to stop”: Understanding Teenagers’ Risk Perception and Mitigation Strategies of Gambling from Reddit">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3788059" target="_blank" rel="noopener noreferrer" aria-label="PDF: “I usually profit because I know when to stop”: Understanding Teenagers’ Risk Perception and Mitigation Strategies of Gambling from Reddit">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
           <li class="pub-item" id="j3">
-            <div class="pub-title">[J.3] “I usually profit because I know when to stop”: Understanding Teenagers’ Risk Perception and Mitigation Strategies of Gambling from Reddit</div>
-            <p class="pub-authors">Yunhan Liu, Elena Koung, <strong>Qiurong Song</strong>, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Accepted to the Proceedings of the ACM on Human-Computer Interaction (CSCW ’26). <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3788059" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">Computer Supported Cooperative Work (CSCW)</span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[J3]</span> Making the Gig Economy Infrastructure Work: Gig Drivers’ Adaptive, Algorithmic, and Social Knowledge Practices</h3>
+              <p class="pub-authors">Rie Helene (Lindy) Hernandez, <strong>Qiurong Song</strong>, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Computer Supported Cooperative Work (CSCW): The Journal of Collaborative Computing and Work Practices, 35(1), Article 1 (2026).</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1007/s10606-026-09536-6" target="_blank" rel="noopener noreferrer" aria-label="Article: Making the Gig Economy Infrastructure Work: Gig Drivers’ Adaptive, Algorithmic, and Social Knowledge Practices">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://link.springer.com/content/pdf/10.1007/s10606-026-09536-6.pdf" target="_blank" rel="noopener noreferrer" aria-label="PDF: Making the Gig Economy Infrastructure Work: Gig Drivers’ Adaptive, Algorithmic, and Social Knowledge Practices">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-          
-
           <li class="pub-item" id="j2">
-            <div class="pub-title">[J.2] Making the Gig Economy Infrastructure Work: Gig Drivers’ Adaptive, Algorithmic, and Social Knowledge Practices</div>
-            <p class="pub-authors">Rie Helene (Lindy) Hernandez, <strong>Qiurong Song</strong>, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Computer Supported Cooperative Work (CSCW) 35.1 (JCSCW '26). <a class="pub-link" href="https://link.springer.com/content/pdf/10.1007/s10606-026-09536-6.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">CHI PLAY 2026</span><span class="pub-rate">Acceptance: <strong>29.0%</strong></span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[J2]</span> From Stream to Stake: Gamblification Practices and User Perceptions on Twitch</h3>
+              <p class="pub-authors">Yunhan Liu, Sam Moradzadeh, <strong>Qiurong Song</strong>, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Proceedings of the ACM on Human-Computer Interaction, 10(7), Article GAMES031 (November 2026), pp. 1–39.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3831281" target="_blank" rel="noopener noreferrer" aria-label="Article: From Stream to Stake: Gamblification Practices and User Perceptions on Twitch">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3831281" target="_blank" rel="noopener noreferrer" aria-label="PDF: From Stream to Stake: Gamblification Practices and User Perceptions on Twitch">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
-
           <li class="pub-item" id="j1">
-            <div class="pub-title">[J.1] Collective Privacy Sensemaking on Social Media about Period and Fertility Tracking post Roe v. Wade</div>
-            <p class="pub-authors"><strong>Qiurong Song</strong>, Renkai Ma, Yubo Kou, and Xinning Gui.</p>
-            <p class="pub-venue">Proceedings of the ACM on Human-Computer Interaction 8.CSCW1 (CSCW '24). <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3641000" target="_blank" rel="noopener noreferrer">[PDF]</a></p>
+            <div class="pub-meta"><span class="pub-venue-label">CSCW 2024</span></div>
+            <div class="pub-body">
+              <h3 class="pub-title"><span class="pub-number">[J1]</span> Collective Privacy Sensemaking on Social Media about Period and Fertility Tracking post Roe v. Wade</h3>
+              <p class="pub-authors"><strong>Qiurong Song</strong>, Renkai Ma, Yubo Kou, and Xinning Gui.</p>
+              <p class="pub-citation">Proceedings of the ACM on Human-Computer Interaction, 8(CSCW1), Article 161, pp. 1–35.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3641000" target="_blank" rel="noopener noreferrer" aria-label="Article: Collective Privacy Sensemaking on Social Media about Period and Fertility Tracking post Roe v. Wade">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3641000" target="_blank" rel="noopener noreferrer" aria-label="PDF: Collective Privacy Sensemaking on Social Media about Period and Fertility Tracking post Roe v. Wade">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
           </li>
         </ol>
       </section>
+
+      <section class="pub-section" aria-labelledby="other-publications">
+        <div class="pub-section-heading"><h2 id="other-publications">Doctoral Consortium &amp; Posters</h2><span class="pub-count">2</span></div>
+        
+        <ol class="pub-list" role="list">
+          <li class="pub-item" id="chi-dc-2026">
+            <div class="pub-meta"><span class="pub-venue-label">CHI Doctoral Consortium 2026</span></div>
+            <div class="pub-body">
+              <h3 class="pub-title">Exploring User Privacy in Period and Fertility Tracking Applications</h3>
+              <p class="pub-authors"><strong>Qiurong Song</strong>.</p>
+              <p class="pub-citation">Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems, pp. 1–5.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3772363.3799211" target="_blank" rel="noopener noreferrer" aria-label="Article: Exploring User Privacy in Period and Fertility Tracking Applications">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3772363.3799211" target="_blank" rel="noopener noreferrer" aria-label="PDF: Exploring User Privacy in Period and Fertility Tracking Applications">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
+          </li>
+          <li class="pub-item" id="cscw-poster-2026">
+            <div class="pub-meta"><span class="pub-venue-label">CSCW Poster 2026</span></div>
+            <div class="pub-body">
+              <h3 class="pub-title">Surfacing Risky Game Design: A Multistakeholder Taxonomy for Understanding Safety Risks on Roblox</h3>
+              <p class="pub-authors">Zinan Zhang, <strong>Qiurong Song</strong>, Xinning Gui, and Yubo Kou.</p>
+              <p class="pub-citation">Companion of the 2026 ACM Conference on Computer-Supported Cooperative Work and Social Computing, pp. 169–175.</p>
+              
+              <div class="pub-actions"><a class="pub-link" href="https://doi.org/10.1145/3785651.3831509" target="_blank" rel="noopener noreferrer" aria-label="Article: Surfacing Risky Game Design: A Multistakeholder Taxonomy for Understanding Safety Risks on Roblox">Article<span aria-hidden="true"> ↗</span></a> <a class="pub-link" href="https://dl.acm.org/doi/pdf/10.1145/3785651.3831509" target="_blank" rel="noopener noreferrer" aria-label="PDF: Surfacing Risky Game Design: A Multistakeholder Taxonomy for Understanding Safety Risks on Roblox">PDF<span aria-hidden="true"> ↗</span></a></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+      <p class="pub-footnote">Acceptance rates are overall paper-track rates for the corresponding year, as listed in my CV. Paper numbers follow my CV.</p>
     </main>
 
     
@@ -214,7 +283,6 @@
   </script>
 
   </div>
-</body>
     <script>
   (function() {
     const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
@@ -227,7 +295,9 @@
     });
   })();
 </script>
+</body>
 </html>
+
 
 
 
