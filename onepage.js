@@ -41,7 +41,7 @@ function updateActiveSection() {
 window.addEventListener('scroll', () => {
   if (!scheduled) { scheduled = true; requestAnimationFrame(updateActiveSection); }
 }, { passive:true });
-window.addEventListener('resize', () => { if (window.innerWidth > 760) closeMenu(); updateActiveSection(); });
+window.addEventListener('resize', () => { if (window.innerWidth > 860) closeMenu(); updateActiveSection(); });
 window.addEventListener('load', updateActiveSection);
 window.addEventListener('hashchange', updateActiveSection);
 document.getElementById('year').textContent = new Date().getFullYear();
