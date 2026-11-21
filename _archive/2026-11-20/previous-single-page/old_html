@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--     <meta name='robots' content='noindex,follow' />
+    <!-- Global site tag (gtag.js) - Google Analytics --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E5TRQN7EX7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E5TRQN7EX7');
+</script>
+    
+    <meta charset="UTF-8">
+    <title>About me | Qiurong Song</title>
+    <link rel="stylesheet" href="style.css">
+      </head>
+
+
+  <body data-new-gr-c-s-check-loaded="14.1036.0" data-gr-ext-installed="">
+    <div class="wrapper">
+       <header>
+        <h1><a href="https://qiurongsong.github.io/">Qiurong Song</a></h1>
+
+          <img src="Image.jpeg" alt="Logo">
+
+        <p>Information Sciences and Technology (IST)<br>Penn State University
+             <br>Email: qiurongsong [at] psu [dot] edu</p>
+        <p class="view" ><a href="https://scholar.google.com/citations?user=hg3heAoAAAAJ&hl=en&oi=ao">Google Scholar</a>
+            <br><a href="https://www.researchgate.net/profile/Qiurong-Song">Research Gate</a> </p>
+
+
+        
+
+
+           
+      </header>
+</head>     <section>
+
+      <h2 id="about-me">About me</h2>
+
+<p>Hi! I’m Qiurong. I'm currently a Ph.D. candidate studying Human-Computer Interaction (HCI) at
+    <a href="https://ist.psu.edu/">Penn State</a>. 
+    I’m part of the <a href="https://sites.psu.edu/healthandplay/">Health and Play Lab</a> 
+    and luckily advised by <a href="https://www.xinninggui.com/">Dr. Xinning Gui</a> and <a href="https://www.yubokou.info/">Dr. Yubo Kou</a>. 
+    My research interests are HCI, privacy, and healthcare.</p>
+    </p>
+
+<!-- <h2 id="projects">Projects</h2>
+      
+<p>[2] Prof. Jiepu Jiang’s group, University of Wisconsin-Madison, U.S.<br>
+    <strong>  Qiurong Song</strong> and Jiepu Jiang. “How Misinformation Density Affects Health Information Search” Accepted to WWW 2022!
+    <a href="https://qiurongsong.github.io/paper/TheWebConf_2022_health_misinfo.pdf">pdf</a></p>
+      
+     <p>[2] Prof. Jiepu Jiang’s group, University of Wisconsin-Madison, U.S.<br>
+    <strong>  Qiurong Song</strong> and Jiepu Jiang. “How Misinformation Density Affects Health Information Search” Accepted to WWW 2022!
+    <a href="https://qiurongsong.github.io/paper/TheWebConf_2022_health_misinfo.pdf">pdf</a></p>
+      
+<p>[3] Prof. Jiepu Jiang’s group, University of Wisconsin-Madison, U.S.<br>
+    <strong>  Qiurong Song</strong> and Jiepu Jiang. “How Misinformation Density Affects Health Information Search” Accepted to WWW 2022!
+    <a href="https://qiurongsong.github.io/paper/TheWebConf_2022_health_misinfo.pdf">pdf</a></p>
+
+ -->
+      <p><br> </p>
+
+<h2 id="publications">Selected publications</h2>
+
+<p> <strong> Qiurong Song</strong>, Yanlai Wu, Rie Helene (Lindy) Hernandez, Yao Li, Yubo Kou, and Xinning Gui. (2025). Understanding Users’ Perception of Personally Identifiable Information. Accepted to Proceedings of the SIGCHI Conference on Human Factors in Computing Systems 2025 (CHI’25) 🥳</p>
+    
+ <p> <strong> Qiurong Song</strong>, Rie Helene (Lindy) Hernandez, Yubo Kou, Xinning Gui. (2024). “Our Users' Privacy is Paramount to Us”: A Discourse Analysis of How Period and Fertility Tracking App Companies Address the Roe v Wade Overturn. 
+     In CHI Conference on Human Factors in Computing Systems (CHI’24) </p>
+ <p> Rie Helene (Lindy) Hernandez, <strong> Qiurong Song</strong>, Yubo Kou, Xinning Gui. (2024). "At the end of the day, I am accountable": Gig Workers' Self-Tracking for Multi-Dimensional Accountability Management. 
+    In CHI Conference on Human Factors in Computing Systems (CHI’24) </p>
+
+    <p> <strong> Qiurong Song</strong>, Renkai Ma, Yubo Kou, Xinning Gui. (2024). Collective Privacy Sensemaking on Social Media about Period and Fertility Tracking post Roe v. Wade. Proceedings of the ACM on Human-Computer Interaction (CSCW’2024).
+          </p>
+     <p> Yuan Sun,<strong> Qiurong Song</strong>, Xinning Gui, Fenglong Ma, Ting Wang. (2023). AutoML in The Wild: Obstacles,
+Workarounds, and Expectations. Proceedings of the ACM CHI Conference on Human Factors
+in Computing Systems 2023 (CHI 2023). (Best Paper Honorable Mention Award)
+      </p>
+       <p> <strong>Qiurong Song</strong> and Jiepu Jiang. (2022). How Misinformation Density Affects Health Information Search.
+Proceedings of the ACM Web Conference 2022 (WWW 2022). </p>
+      
+<!-- <p><strong>Song, Q.</strong>
+    , Huang, T., Wang, X., Niu, J., Zhao, W., Xu, H., and Lu, L. 2021. "Chapter 15 - Application of Big Data and Artificial Intelligence Approaches
+    in Diagnosis and Treatment of Neuropsychiatric Diseases," in Big Data in Psychiatry #X0026; Neurology, A.A. Moustafa (ed.). Academic Press, pp. 305-323. (book chapter)
+    https://doi.org/10.1016/B978-0-12-822884-5.00005-2
+    <a href="https://qiurongsong.github.io/paper/16-Ch15.pdf">pdf</a>
+</em>
+
+</p> -->
+        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </section>
+
+    </div>
+</body>
+</html> 
