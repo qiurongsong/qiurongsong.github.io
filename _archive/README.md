@@ -1,11 +1,15 @@
 # Website archive
 
-These snapshots preserve earlier website materials so they can be inspected or restored in GitHub. Each folder contains the complete site files and assets from its source commit, with their original filenames and relative paths.
+These backups preserve earlier website materials so they can be inspected or restored in GitHub. The two site snapshot folders contain complete site files and assets from their source commits, with their original filenames and relative paths. Individual CV backups are listed separately below.
 
 | Snapshot | Contents | Source commit |
 | --- | --- | --- |
 | [Original website](2026-11-20/original-site/) | The website before the single-page redesign, including the original pages, styles, images, and papers. | `42250bd45c902d57383ddd188cb622c39393db43` |
 | [Previous single-page draft](2026-11-20/previous-single-page/) | The single-page draft before the two-row craft gallery and November 20 CV replacement. Includes the previous CV. | `3d478ac6672486261123043ee043e27e6b1d5135` |
+
+## Previous CV
+
+[CV before the latest upload](2026-11-21/Qiurong_Song_CV_previous.pdf) preserves the website PDF from commit `ce4367f8e9c3a288c1e7e6f020eab89eb18c53a1`, before the latest CV replacement and PDF-link consistency update. Copy this file to `Qiurong_Song_CV.pdf` in the repository root to restore it.
 
 ## Restore an individual file
 
