@@ -93,12 +93,12 @@ button { font:inherit; }
 .cv-actions { display:flex; flex-wrap:wrap; gap:.5rem .75rem; }
 .cv-actions a { display:inline-flex; align-items:center; min-height:44px; padding:.4rem .85rem; border:1px solid #cbdcec; border-radius:5px; font-size:.875rem; font-weight:600; text-decoration:none; }
 .cv-actions a:hover { background:#eef5fc; border-color:#8fb4d7; }
-.personal-gallery { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:.9rem; }
-.personal-gallery img { width:100%; aspect-ratio:4/5; height:auto; object-fit:cover; border-radius:6px; background:#f2f5f7; }
+.personal-gallery { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.4rem; }
+.personal-gallery img { width:100%; aspect-ratio:1; height:auto; object-fit:cover; border-radius:6px; background:#f2f5f7; }
 .personal-gallery figure:first-child img { object-position:center; }
 .personal-gallery .printmaking-photo { grid-column:span 2; }
-.personal-gallery .printmaking-frame { position:relative; width:100%; aspect-ratio:8/5; overflow:hidden; border-radius:6px; background:#f2f5f7; }
-.personal-gallery .printmaking-photo img { position:absolute; left:50%; top:50%; width:81.5625%; max-width:none; height:auto; aspect-ratio:auto; object-fit:contain; transform:translate(-50%,-50%) rotate(-90deg); border-radius:0; }
+.personal-gallery .printmaking-frame { position:relative; width:100%; aspect-ratio:2; overflow:hidden; border-radius:6px; background:#f2f5f7; }
+.personal-gallery .printmaking-photo img { position:absolute; left:50%; top:50%; width:65.25%; max-width:none; height:auto; aspect-ratio:auto; object-fit:contain; transform:translate(-50%,-50%) rotate(-90deg); border-radius:0; }
 .personal-gallery figcaption { color:#617184; font-size:.8rem; margin-top:.6rem; line-height:1.5; }
 .contact-section { display:grid; grid-template-columns:1fr 1fr; gap:2rem; padding-bottom:3.6rem; }
 .contact-section .eyebrow { margin-bottom:.5rem; }
@@ -137,6 +137,8 @@ button { font:inherit; }
   .publications-page .pub-meta { flex-direction:row; flex-wrap:wrap; align-items:baseline; gap:.35rem 1rem; }
   .publications-page .pub-link { min-height:32px; padding:.1rem .05rem; }
   .personal-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.3rem .85rem; }
+  .personal-gallery .printmaking-frame { aspect-ratio:8/5; }
+  .personal-gallery .printmaking-photo img { width:81.5625%; }
   .contact-section { grid-template-columns:1fr; gap:1.5rem; }
   .contact-section address { justify-self:start; }
 }

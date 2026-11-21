@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Qiurong Song | Projects</title>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5TRQN7EX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E5TRQN7EX7');
+  </script>
+
+
+</head>
+
+
+<body>
+  <div class="wrapper">
+    
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="brand-link">Qiurong Song</a>
+      <!-- <span class="tagline">HCI · Privacy · Healthcare</span> -->
+    </div>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+        <a href="personal.html">Personal</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<main class="content">
+  <h1>Recent projects</h1>
+
+  <!-- === Project 1 === -->
+<section class="project">
+<div class="project-media">
+    <a href="https://www.bloomberg.com/news/newsletters/2023-03-26/is-my-period-tracking-app-safe-in-post-roe-america" target="_blank" rel="noopener noreferrer">
+      <img src="reprotech.png" alt="Protesters holding 'bans off our bodies' signs in Washington, D.C." />
+       </a>
+  </div>
+  <div class="project-text">
+    <h2>Usable Privacy in Reproductive Health Technologies</h2>
+    <p>
+      This project examines how at-risk populations—particularly women and people with uteruses—navigate
+      privacy and security challenges in reproductive health technologies such as period and fertility tracking apps.
+      Through a series of studies, I explore how users, companies, and legal infrastructures collectively 
+      shape the reproductive privacy landscape and how design can empower users within it.
+    </p>
+    <p>
+      My work reveals how individuals interpret and respond to privacy risks amid 
+      shifting sociopolitical contexts such as the post–Roe v. Wade era, 
+      how companies communicate privacy commitments and adapt to regulatory pressures, 
+      and how design can strengthen both usability and privacy protection.
+    </p>
+    <p>
+      Related publications: <a href="https://dl.acm.org/doi/pdf/10.1145/3613904.3642384">CHI 2024</a>, <a href="https://dl.acm.org/doi/pdf/10.1145/3641000">CSCW 2024</a>,
+      <a href="https://dl.acm.org/doi/pdf/10.1145/3706598.3713783">CHI 2025</a>,
+      and <a href="https://drive.google.com/file/d/15IJbvmbBXyVx9MMQ9XwMED3BhoSagWMA/view?usp=sharing">IEEE S&amp;P 2026</a>.
+    </p>
+  </div>
+</section>
+
+<!-- === Project 2 === -->
+<section class="project">
+  <div class="project-media">
+    <a href="https://www.bbc.com/news/uk-wales-65659896" target="_blank" rel="noopener noreferrer">
+      <img src="roblox.png" alt="Child holding a phone showing the Roblox logo" />
+        </a>
+  </div>
+  <div class="project-text">
+    <h2>Safety by Platform Design in Game Ecosystems</h2>
+    <p>
+      This line of work explores how platform design and governance shape safety and security 
+      within game ecosystems where young users participate as both players and creators.
+      My studies focus on Roblox—one of the most prominent “child-friendly” game platforms—
+      to understand how children and game creators navigate risks and responsibilities in these environments.
+    </p>
+    <p>
+      My work identifies how harmful design practices, such as predatory monetization schemes,
+      raise serious concerns for children’s online safety, financial well-being, and digital autonomy,
+      highlighting the need for safety-by-design frameworks that better protect and empower young users.
+    </p>
+    <p>
+      Related publications: <a href="https://www.usenix.org/system/files/soups2025-song.pdf">SOUPS 2025</a>, 
+      <a href="https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_song-qiurong.pdf">USENIX Security 2026 </a>.
+    </p>
+  </div>
+</section>
+  
+  
+</main>
+    
+  <footer class="site-footer">
+    <!-- <div class="social-links">
+      <a href="https://scholar.google.com/citations?user=hg3heAoAAAAJ" target="_blank" title="Google Scholar">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+      <a href="https://www.researchgate.net/profile/Qiurong-Song" target="_blank" title="ResearchGate">
+        <i class="fab fa-researchgate"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/qiurong-song-89a4b626a/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/QiurongSong" target="_blank" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div> -->
+    <p>© <span id="year"></span> Qiurong Song</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  </div>
+    <script>
+  (function() {
+    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav a').forEach(a => {
+      const href = (a.getAttribute('href') || '').toLowerCase();
+      if ((path === '' && href === 'index.html') || href === path) {
+        a.setAttribute('aria-current', 'page');
+        a.classList.add('active');
+      }
+    });
+  })();
+</script>
+</body>
+</html>

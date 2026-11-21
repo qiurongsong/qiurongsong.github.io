@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Qiurong Song | Personal</title>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5TRQN7EX7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E5TRQN7EX7');
+  </script>
+
+
+</head>
+
+
+<body>
+  <div class="wrapper">
+    
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html" class="brand-link">Qiurong Song</a>
+      <!-- <span class="tagline">HCI · Privacy · Healthcare</span> -->
+    </div>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="news.html">News</a>
+        <a href="personal.html">Personal</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+    
+<main class="content">
+  <h1>Personal Life</h1>
+  <p class="lead">
+    Outside of research, I enjoy swimming, reading novels, playing video games (I love Final Fantasy!), 
+    and creating small art and craft projects. Here are a few photos of things I’ve made and moments I enjoy 😊🌸✨
+  </p>
+
+  <section class="personal-gallery">
+    <div class="photo-item">
+      <img src="personalphotos/glass.jpg" alt="A stained glass artwork" />
+    </div>
+    <div class="photo-item">
+      <img src="personalphotos/goosepottery.jpg" alt="small pottery" />
+    </div>
+    <div class="photo-item">
+      <img src="personalphotos/cupcakes.jpg" alt="Two cute handmade cupcakes" />
+    </div>
+    <div class="photo-item">
+      <img src="personalphotos/cupcakeandmodel.jpg" alt="A cute handmade cupcake" />
+    </div>
+    <div class="photo-item">
+      <img src="personalphotos/potterycup.jpg" alt="Pottery cup" />
+    </div>
+  </section>
+</main>
+
+
+
+    
+    
+  <footer class="site-footer">
+    <!-- <div class="social-links">
+      <a href="https://scholar.google.com/citations?user=hg3heAoAAAAJ" target="_blank" title="Google Scholar">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+      <a href="https://www.researchgate.net/profile/Qiurong-Song" target="_blank" title="ResearchGate">
+        <i class="fab fa-researchgate"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/qiurong-song-89a4b626a/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/QiurongSong" target="_blank" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div> -->
+    <p>© <span id="year"></span> Qiurong Song</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  </div>
+
+  <script>
+    // Auto-load photos if they exist in the root
+    const grid = document.getElementById('photoGrid');
+    const candidates = Array.from({length: 6}, (_, i) => `personal-${i+1}.jpg`);
+    candidates.forEach(name => {
+      const img = new Image();
+      img.src = name;
+      img.onload = () => {
+        const el = document.createElement('img');
+        el.src = name;
+        el.alt = name;
+        grid.appendChild(el);
+      };
+    });
+  </script>
+    <script>
+  (function() {
+    const path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    document.querySelectorAll('.nav a').forEach(a => {
+      const href = (a.getAttribute('href') || '').toLowerCase();
+      if ((path === '' && href === 'index.html') || href === path) {
+        a.setAttribute('aria-current', 'page');
+        a.classList.add('active');
+      }
+    });
+  })();
+</script>
+</body>
+</html>
