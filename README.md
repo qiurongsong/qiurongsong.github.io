@@ -13,4 +13,4 @@ The previous page URLs redirect to the matching homepage sections.
 
 ## Older materials and restoration
 
-The [_archive](./_archive/README.md) folder contains complete snapshots of the original website and the previous single-page draft, including its older CV. Its README explains how to restore an individual file or the original website through a new branch and pull request.
+The [_archive](./_archive/README.md) folder preserves older website pages and assets. Previous CV PDFs have been removed, so only the current `Qiurong_Song_CV.pdf` remains. The archive README explains how to restore website files through a new branch and pull request.
